@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<link rel="stylesheet" type="text/css" href="css/style-trang-chu.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<div class="top-header">
+				<ul>
+					<li><a href="#">Sản phẩm bán chạy</a></li>
+					<li><a href="#">Sản phẩm khuyến mại</a></li>
+					<li><a href="#">Sản phẩm mới</a></li>
+					<li><a href="#">Giỏ hàng của bạn</a></li>
+				</ul>
+			</div>
+			<div class="top-banner">
+				<div class="top-logo">
+					<a href="trangchu.html"><img src="images/top-logo.jpg" width="393" height="170"></a>
+				</div>
+				<div class="banner-right">
+					<a href="#"><img  class="slide" src="images/test1.jpg" width="813" height="170" title="Chuyen phan phoi hang chinh hang"></a>
+					<a href="#"><img  class="slide" src="images/test2.jpg" width="813" height="170" title="Chuyen phan phoi hang chinh hang"></a>
+					<a href="#"><img class="slide" src="images/test3.jpg" width="813" height="170" title="Chuyen phan phoi hang chinh hang"></a>
+					<a href="#"><img class="slide" src="images/test4.jpg" width="813" height="170" title="Chuyen phan phoi hang chinh hang"></a>
+					<div>
+						<button class="prev-left"  onclick="plusDivs(-1)">&#10094;</button>
+	  					<button class="next-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var slideIndex = 1;
+					showDivs(slideIndex);
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+					function showDivs(n){
+					var i;
+					var x = document.getElementsByClassName("slide");
+						if (n > x.length) {slideIndex = 1}
+					  	if (n < 1) {slideIndex = x.length} ;
+					  	for (i = 0; i < x.length; i++) {
+					    	x[i].style.display = "none";
+					  	}
+					  	x[slideIndex-1].style.display = "block";
+					}
+				</script>
+			</div>
+		</div>
+		<!-- end header -->
+		<!-- menu -->
+		<div class="menu">
+			<div class="category-product">
+				<div class="icon-category-product">
+					<a href="#"><img src="images/icon-danh-muc.jpg" alt=""></a>
+				</div>
+				<div class="name-category">
+					<a href="">Danh mục sản phẩm</a>
+				</div>
+			</div>
+			<div class="search">
+				<div class="input-keywork">
+					<input type="text" name="search-box" size="50" autofocus="autofocus" placeholder="Bạn muốn tìm gì ?"/>
+				</div>
+				<div class="button-search">
+                    <input type="submit" name="button" value=""/>
+                </div>
+			</div>
+			<div class="care-customer">
+				<div class="arrow"></div>
+				<div class="sdt-cskh">
+					<p>CSKH : 1900 6666 </p>
+				</div>
+			</div>
+			<div class="complain-guarantee">
+				<div class="arrow"></div>
+				<div class="sdt-knbh">
+					<p>Khiếu nại bảo hành : 1900 9999 </p>
+				</div>
+			</div>
+			<div class="support">
+				<div class="arrow"></div>
+				<div class="support-facebook"></div>
+			</div>
+		</div>
+		<!-- end menu -->
+		<!-- banner-menu -->
+		<div class="banner-menu">
+			<div class="top-banner-menu">
+				<!-- left-banner-menu  -->
+				<div class="left-banner-menu">
+					<!-- dien thoai -->
+					<div class="dien-thoai">
+						<ul class="row1">
+							<li><a href="#">
+								<span>Điện thoại</span></a>
+							</li>
+						</ul>
+						<div class="line"></div>
+					</div>
+					<!-- end dien thoai -->
+					<!-- tablet -->
+					<div class="tablet">
+						<ul class="row2">
+							<li><a href="#">
+								<span>Tablet</span></a>
+							</li>
+						</ul>
+						<div class="line"></div>
+					</div>
+					<!-- end tablet -->
+					<!-- laptop -->
+					<div class="lap-top">
+						<ul class="row3">
+							<li><a href="#">
+								<span>Lap top</span></a>
+							</li>
+						</ul>
+						<div class="line"></div>
+					</div>
+					<!-- end laptop -->
+					<!-- phu-kien -->
+					<div class="phu-kien">
+						<ul class="row4">
+							<li><a href="#">
+								<span>Phụ kiện</span></a>
+							</li>
+						</ul>
+						<div class="line"></div>
+					</div>
+					<!-- end phu-kien -->
+					<!-- doi-tra-hang -->
+					<div class="doi-tra-hang">
+						<ul class="row5">
+							<li><a href="#">
+								<span>Đổi trả hàng</span></a>
+							</li>
+						</ul>
+						<div class="line"></div>
+					</div>
+					<!-- end doi-tra-hang -->
+					<!-- khuyen-mai -->
+					<div class="khuyen-mai">
+						<ul class="row6">
+							<li><a href="#">
+								<span>Khuyến mại</span></a>
+							</li>
+						</ul>
+						<div class="line"></div>
+					</div>
+					<!-- end khuyen-mai -->
+					<!-- tra-gop -->
+					<div class="tra-gop">
+						<ul class="row7">
+							<li><a href="#">
+								<span>Trả góp</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- end tra-gop -->
+				</div>
+				<!-- end left-banner-menu -->
+				<!-- main-banner-menu -->
+				<div class="main-banner-menu">
+					<div class="mySlide">
+						<a href="#"><img class="mySlides" src="images/banner-main.jpg"></a>
+						<a href="#"><img class="mySlides" src="images/banner-main-1.jpg"></a>
+						<a href="#"><img class="mySlides" src="images/banner-main-2.jpg"></a>
+						<a href="#"><img class="mySlides" src="images/banner-main-3.jpg"></a>
+						<a href="#"><img class="mySlides" src="images/banner-main-4.jpg"></a>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var myIndex = 0;
+					carousel();
+					function carousel(){
+						var i;
+						var x =document.getElementsByClassName("mySlides");
+						for (i = 0; i < x.length; i++){
+							x[i].style.display = "none";
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}{
+						x[myIndex-1].style.display = "block";
+						}
+						setTimeout(carousel,5000);
+					}
+				</script>
+				<!-- end main-banner-menu -->
+				<div class="right-banner-menu">
+					<div class="banner-video" style="margin-left: 5px;">
+						<a href="https://www.youtube.com/watch?v=I7hG2jBjuWk" target="_blank">
+                    		<img alt="Video đỉnh cao" src="images/videobn.jpg" />
+                        </a>
+					</div>
+					<div class="img-1" style="margin-left: 5px;margin-top: 5px;">
+						<a href="http://mywork.com.vn/tuyen-dung/" target="_blank">
+                    	<img alt="Thông tin tuyển dụng" title="Thông tin tuyển dụng" src="images/img-1.jpg" />
+                        </a>
+					</div>
+					<div class="img-2" style="margin-left: 5px;margin-top: 5px;">
+						<a href="">
+                    	<img alt="Oppo mirror 5" title="Oppo mirror 5" src="images/img-2.jpg" />
+                        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end banner-menu-->
+		<!-- content -->
+		<div class="content">
+			<!-- menu-content -->
+			<div class="menu-content">
+				<div class="top-menu-content">
+					<div class="left-menu-content">
+						<a href="trangchu.html"><img src="images/icon-danh-muc.jpg"></a>
+					</div>
+					<div class="search-product">
+                		<div class="search-select-product">
+                			<ul id="search-select-product">
+								<li><a href="#">Tất cả</a>
+									<ul id="sub-menu">
+										<li><a href="#">Điện thoại</a></li>
+										<li><a href="#">Tablet</a></li>
+										<li><a href="#">Laptop</a></li>
+										<li><a href="#">Phụ kiện</a></li>
+									</ul>
+								</li>
+                    			<li><a href="#">Mức giá </a>
+									<ul id="sub-menu">
+										<li><a href="#">Tất cả</a></li>
+										<li><a href="#">Dưới 1 triệu</a></li>
+										<li><a href="#">Dưới 2 triệu</a></li>
+		              					<li><a href="#">Dưới 3 triệu</a></li>
+		                        		<li><a href="#">Dưới 5 triệu</a></li>
+		                        		<li><a href="#">Dưới 8 triệu</a></li>
+		                       			<li><a href="#">Dưới 10 triệu</a></li>
+		                       			<li><a href="#">Trên 10 triệu</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Hãng sản xuất</a>
+									<ul id="sub-menu">
+										<li><a href="#">Tất cả</a></li>
+										<li><a href="#">Samsung</a></li>
+										<li><a href="#">Apple</a></li>
+		              					<li><a href="#">Sony</a></li>
+		                        		<li><a href="#">OPPO</a></li>
+		                        		<li><a href="#">HTC</a></li>
+		                       			<li><a href="#">LG</a></li>
+									</ul>
+								</li>
+							</ul>
+               			</div>
+               		</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<div class="btn-menu-content">
+				<ul>
+					<span style="font-family: Tahoma, Geneva;font-size: 13px;color:  #666666;">Tìm nhanh:</span>
+					<li><a href="#">Samsung</a></li>
+					<li><a href="#">Nokia</a></li>
+					<li><a href="#">Iphone</a></li>
+					<li><a href="#">OPPO</a></li>
+					<li><a href="#">Dưới 1 triệu</a></li>
+					<li><a href="#">Dưới 3 triệu</a></li>
+					<li><a href="#">Dưới 5 triệu</a></li>
+					<li><a href="#">Dưới 8 triệu</a></li>
+				</ul>
+			</div>
+			<!-- end menu-content -->
+			<div style="clear: both;"></div>
+			<div class="info-product">
+				<div class="toolbar-full">
+					<div class="toolbar">
+						<span>Top bán chạy nhất</span>
+					</div>
+				</div>
+				<div class="showing-product">
+					<ul class="product-homepage">
+						<li>
+							<a href="chi-tiet-sp.html"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+									<h3>Iphone 6 Plus 64Gb</h3>
+									<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+									<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+								</div>
+								<div class="info">
+									<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+									<span>HĐH: IOS 8</span><br>
+									<span>CPU: A8 64bit</span><br>
+									<span>Camera: 8MP, 1 SIM</span><br>
+									<span>Dung lượng pin: 2915mAh</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="product-homepage">
+						<li>
+							<a href="#"><img src="images/ss-galaxy-note.jpg" >
+							<div class="text">
+									<h3>Samsung Galaxy Note</h3>
+									<h4>17.990.000đ</h4>
+									<h6><span>Khuyến mãi giá trị đến: <strong>1.300.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+								</div>
+								<div class="info">
+									<span>Màn hình: Quad HD, 5.6"</span><br>
+									<span>HĐH: Android 4.4 (KitKat)</span><br>
+									<span>CPU: Qualcomm Snapdragon 805, 4 nhân, 2.7GHz</span><br>
+									<span>Camera: 16.0 MP</span><br>
+									<span>Dung lượng pin: 3000 mAh</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="product-homepage">
+						<li>
+							<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+									<h3>Iphone 6 Plus 64Gb</h3>
+									<h4>11.000.000đ</h4>
+									<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+								</div>
+								<div class="info">
+									<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+									<span>HĐH: IOS 8</span><br>
+									<span>CPU: A8 64bit</span><br>
+									<span>Camera: 8MP, 1 SIM</span><br>
+									<span>Dung lượng pin: 2915mAh</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="product-homepage">
+						<li>
+							<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+									<h3>Iphone 6 Plus 64Gb</h3>
+									<h4>11.000.000đ</h4>
+									<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+								</div>
+								<div class="info">
+									<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+									<span>HĐH: IOS 8</span><br>
+									<span>CPU: A8 64bit</span><br>
+									<span>Camera: 8MP, 1 SIM</span><br>
+									<span>Dung lượng pin: 2915mAh</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="product-homepage">
+						<li>
+							<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+									<h3>Iphone 6 Plus 64Gb</h3>
+									<h4>11.000.000đ</h4>
+									<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+								</div>
+								<div class="info">
+									<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+									<span>HĐH: IOS 8</span><br>
+									<span>CPU: A8 64bit</span><br>
+									<span>Camera: 8MP, 1 SIM</span><br>
+									<span>Dung lượng pin: 2915mAh</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="product-homepage">
+						<li>
+							<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+									<h3>Iphone 6 Plus 64Gb</h3>
+									<h4>11.000.000đ</h4>
+									<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+								</div>
+								<div class="info">
+									<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+									<span>HĐH: IOS 8</span><br>
+									<span>CPU: A8 64bit</span><br>
+									<span>Camera: 8MP, 1 SIM</span><br>
+									<span>Dung lượng pin: 2915mAh</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- left-content -->
+			<div class="left-content">
+				<ul class="product-homepage-1">
+					<li>
+						<a href="#"><img src="images/nokia.jpg" >
+							<div class="text-1">
+								<h3>Nokia Lumia 930</h3>
+								<h4>10.900.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>2.290.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info-1">
+								<span>Màn hình: Full HD, 5.0"</span><br>
+								<span>HĐH: Windows Phone 8.1</span><br>
+								<span>CPU: Qualcomm Snapdragon 800, 4 nhân, 2.2 GHz</span><br>
+								<span>Camera: 20 MP</span><br>
+								<span>Dung lượng pin: 2420mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage-1">
+					<li>
+						<a href="#"><img src="images/samsung-galaxy-A8.jpg">
+							<div class="text-1">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info-1">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul><ul class="product-homepage-1">
+					<li>
+						<a href="#"><img src="images/samsung-galaxy-A8.jpg">
+							<div class="text-1">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info-1">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage-1">
+					<li>
+						<a href="#"><img src="images/nokia.jpg" >
+							<div class="text-1">
+								<h3>Nokia Lumia 930</h3>
+								<h4>10.900.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>2.290.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info-1">
+								<span>Màn hình: Full HD, 5.0"</span><br>
+								<span>HĐH: Windows Phone 8.1</span><br>
+								<span>CPU: Qualcomm Snapdragon 800, 4 nhân, 2.2 GHz</span><br>
+								<span>Camera: 20 MP</span><br>
+								<span>Dung lượng pin: 2420mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage-1">
+					<li>
+						<a href="#"><img src="images/samsung-galaxy-A8.jpg">
+							<div class="text-1">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info-1">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage-1">
+					<li>
+						<a href="#"><img src="images/nokia.jpg" >
+							<div class="text-1">
+								<h3>Nokia Lumia 930</h3>
+								<h4>10.900.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>2.290.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info-1">
+								<span>Màn hình: Full HD, 5.0"</span><br>
+								<span>HĐH: Windows Phone 8.1</span><br>
+								<span>CPU: Qualcomm Snapdragon 800, 4 nhân, 2.2 GHz</span><br>
+								<span>Camera: 20 MP</span><br>
+								<span>Dung lượng pin: 2420mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="product-homepage">
+					<li>
+						<a href="#"><img src="images/iphone-6-plus.jpg" >
+							<div class="text">
+								<h3>Iphone 6 Plus 64Gb</h3>
+								<h4>11.000.000<b style="text-decoration: underline;">đ</b></h4>
+								<h6><span>Khuyến mãi giá trị đến: <strong>3.200.000<b style="text-decoration: underline;">đ</b></strong></span></h6>
+							</div>
+							<div class="info">
+								<span>Màn hình: Retina HD, 5.5 inches"</span><br>
+								<span>HĐH: IOS 8</span><br>
+								<span>CPU: A8 64bit</span><br>
+								<span>Camera: 8MP, 1 SIM</span><br>
+								<span>Dung lượng pin: 2915mAh</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- end left-content -->
+			<!-- right-content -->
+			<div class="right-content">
+				<div class="giao-hang">
+					<a href="#"><img src="images/giao-hang.gif" width="400" height="125" alt="Giao hàng" title="Giao hàng"></a>
+				</div>
+				<div class="news">
+					<div class="news-tech"><span>Tin công nghệ</span></div>
+					<div class="see-all"><a href="#"><span>Xem tất cả ></span></a></div>
+				</div>
+				<div class="news-tech-1">
+					<div class="img-news-tech-1">
+						<a href="#"><img src="images/news-1.jpg" alt=""></a>
+					</div>
+					<div class="text-news-tech-1">
+						<a href="#"><span>Chọn mua máy “2 trong 1” , nhận quà giá trị tại cửa hàng</span></a>
+					</div>
+				</div>
+				<div class="news-tech-1">
+					<div class="img-news-tech-1">
+						<a href="#"><img src="images/news-2.jpg" alt=""></a>
+					</div>
+					<div class="text-news-tech-1">
+						<a href="#"><span>Tặng ngay 1.000.000đ dành cho Iphone 6, 6 Plus, 5s : Thời gian chỉ trong 2 ngày (20-12 - 22-12).</span></a>
+					</div>
+				</div>
+				<div class="news-tech-1">
+					<div class="img-news-tech-1">
+						<a href="#"><img src="images/news-3.jpg" alt=""></a>
+					</div>
+					<div class="text-news-tech-1">
+						<a href="#"><span>Tặng ngay Voucher mua hàng hoàn tiền xăng tại cửa hàng</span></a>
+					</div>
+				</div>
+				<div class="news-tech-1">
+					<div class="img-news-tech-1">
+						<a href="#"><img src="images/news-4.jpg" alt=""></a>
+					</div>
+					<div class="text-news-tech-1">
+						<a href="#"><span>Mua trả góp 0% lãi suất dành cho Galaxy S6</span></a>
+					</div>
+				</div>
+				<div class="news-tech-1">
+					<div class="img-news-tech-1">
+						<a href="#"><img src="images/news-5.jpg" alt=""></a>
+					</div>
+					<div class="text-news-tech-1">
+						<a href="#"><span>Điện thoại Bphone và những điều cần biết</span></a>
+					</div>
+				</div>
+			</div>
+			<!-- end right-content -->
+		</div>
+		<!-- end content -->
+		<div class="banner-dong">
+			<a href="#"><img src="images/fs-noel.gif" alt=""></a>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-1">
+			<div class="top-footer">
+				<div class="lef-top-footer">
+					<ul><p>Tin tức</p>
+						<li><a href="#">Tin mới</a></li>
+						<li><a href="#">Khuyến mại</a></li>
+						<li><a href="#">Download</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Tuyển dụng</a></li>
+					</ul>
+				</div>
+				<div class="mid-top-footer">
+					<ul><p>Chính sách</p>
+						<li><a href="#">Chính sách giao hàng</a></li>
+						<li><a href="#">Chính sách đổi hàng</a></li>
+						<li><a href="#">Chính sách bảo hành</a></li>
+						<li><a href="#">Chính sách trả góp</a></li>
+						<li><a href="#">Giới thiệu máy đổi trả</a></li>
+					</ul>
+				</div>
+				<div class="mid-1-top-footer">
+					<ul><p>Dịch vụ & hỗ trợ</p>
+						<li><a href="#">Hệ thống cửa hàng</a></li>
+						<li><a href="#">Hướng dẫn mua hàng</a></li>
+						<li><a href="#">Hướng dẫn thanh toán</a></li>
+						<li><a href="#">Hướng dẫn tích điểm </a></li>
+						<li><a href="#">Các câu hỏi thường gặp</a></li>
+					</ul>
+				</div>
+				<div class="right-top-footer">
+					<ul><p>Danh mục và các nhãn hàng được yêu thích</p>
+						<li><span>Máy tính bảng:</span></li>
+						<li><a href="#">Apple,</a></li>
+						<li><a href="#">Samsung,</a></li>
+						<li><a href="#">Oppo,</a></li>
+						<li><a href="#">Nokia,</a></li>
+						<li><a href="#">Xem thêm...</a></li>
+					</ul>
+					<ul>
+						<li><span>Điện thoại:</span></li>
+						<li><a href="#">Apple,</a></li>
+						<li><a href="#">Samsung,</a></li>
+						<li><a href="#">Oppo,</a></li>
+						<li><a href="#">Nokia,</a></li>
+						<li><a href="#">Xem thêm...</a></li>
+					</ul>
+					<ul>
+						<li><span>Apple:</span></li>
+						<li><a href="#">Iphone,</a></li>
+						<li><a href="#">Ipad,</a></li>
+						<li><a href="#">Macbook,</a></li>
+						<li><a href="#">Imac,</a></li>
+						<li><a href="#">Xem thêm...</a></li>
+					</ul>
+					<ul>
+						<li><span>Máy tính xách tay:</span></li>
+						<li><a href="#">Apple,</a></li>
+						<li><a href="#">DELL,</a></li>
+						<li><a href="#">HP,</a></li>
+						<li><a href="#">Accer,</a></li>
+						<li><a href="#">Xem thêm...</a></li>
+					</ul>
+					<ul>
+						<li><span>Phụ kiện:</span></li>
+						<li><a href="#">Tai nghe,</a></li>
+						<li><a href="#">Bao da,</a></li>
+						<li><a href="#">Ốp lưng,</a></li>
+						<li><a href="#">Xem thêm...</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="center-footer">
+				<div class="registration-support">
+					Đăng ký nhận khuyến mãi:
+				</div>
+				<div style="clear: both;"></div>
+				<div class="left-registration-support">
+					<div class="name">
+						<input type="text" name="ho-ten" autofocus="autofocus" placeholder="Họ tên bạn">
+					</div>
+					<div class="email">
+						<input type="text" name="email" autofocus="autofocus" placeholder="Email">
+					</div>
+					<div class="dang-ky">
+						<input type="button" name="button" value="Đăng ký">
+					</div>
+				</div>
+				<div class="right-registration-support">
+					<div class="icon-ho-tro">
+						<img src="images/icon-ho-tro.jpg" alt="">
+					</div>
+					<div class="tu-van">
+						<a href="#"><span style="margin: 5px;">Tư vấn miễn phí (24/7)</span></a><br>
+						<span style="font-weight: bold;color: red;font-size: 15px;margin: 5px">1900 6666</span>
+					</div>
+					<div class="khieu-nai">
+						<a href="#"><span style="margin: 5px;">Khiếu nại - bảo hành(8:00 - 22:00)</span></a><br>
+						<span style="font-weight: bold;color: red;font-size: 15px;margin: 5px">1900 9999</span>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="left-bottom-footer">
+					<div class="payment-support">
+						Hỗ trợ thanh toán
+					</div>
+					<div style="clear: both;"></div>
+					<div class="icon-payment">
+						<ul>
+							<li><a href="#"><img src="images/visa.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/visa.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/visa.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/visa.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/visa.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/visa.jpg" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="addred-company">
+						<span>© 2007 - 2015 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số T-Mobile</span><br>
+						<span>Địa chỉ: Số 404 đường Kim Giang P. Đại Kim - Q.Hoàng Mai - TP Hà Nội</span><br>
+						<span>GPĐKKD số 0000000000 do Sở KHĐT TP.Hà Nội cấp ngày 20/12/2019.</span>
+					</div>
+				</div>
+				<div class="right-bottom-footer">
+					<div class="certification">
+						Chứng nhận giải thưởng
+					</div>
+					<div class="icon-certification">
+						<ul>
+							<li><a href="#"><img src="images/thvn.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/thvn.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/thvn.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/thvn.jpg" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="channel-connection">
+						<span>Các kênh kết nối</span>
+						<ul>
+							<li><a href="#"><img src="images/fb.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/gg.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/youtube.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+</body>
+</html>
